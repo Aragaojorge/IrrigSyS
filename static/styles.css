@@ -1,0 +1,16 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ebedef;
+
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+div {
+    padding-top: 10px;
+    text-align: center;
+}
