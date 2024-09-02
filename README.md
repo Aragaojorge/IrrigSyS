@@ -56,7 +56,7 @@ python -m venv venv
 
 source venv/bin/activate   
 
-# No Windows: venv\Scripts\activate
+No Windows: venv\Scripts\activate
 
 
 ## Configure o banco de dados PostgreSQL:
