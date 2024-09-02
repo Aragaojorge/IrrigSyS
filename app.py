@@ -13,7 +13,7 @@ app = Flask(__name__)
 def get_db_connection():
     
     # Cria a conexão com o db sensor_data
-    conn = psycopg2.connect("dbname='irrig_sys' user='jorge' password='123456' host='localhost'")
+    conn = psycopg2.connect("dbname='irrig_sys' user='user' password='password' host='localhost'")
     
     # Abri um cursor para performar consultas no db
     cur = conn.cursor()
