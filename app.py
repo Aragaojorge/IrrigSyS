@@ -2,6 +2,7 @@ from flask import Flask, render_template
 import psycopg2
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 from io import BytesIO
 import base64
 
@@ -51,6 +52,12 @@ def hello():
     plt.title('Temperatura e Umidade do Solo')
     # Posicionamento da legenda do gráfico
     plt.legend(loc='lower left', bbox_to_anchor=(1,1))
+    # Formatar as datas para o formato dia/mês/ano
+    plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d-%m-%Y'))
+    # Exibir apenas as datas com dados
+    plt.xticks(df['timestamp'])
+    # Rotacionar as datas
+    plt.xticks(rotation=45)
     
     # Converter o gráfico em imagem para base64
     img = BytesIO()
