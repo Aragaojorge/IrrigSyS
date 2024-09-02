@@ -45,7 +45,7 @@ pip (gerenciador de pacotes do Python)
 
 Clone o repositório para a sua máquina local:
 
-git clone https://github.com/seu_usuario/seu_projeto.git
+git clone https://github.com/Aragaojorge/IrrigSyS/
 
 cd seu_projeto
 
